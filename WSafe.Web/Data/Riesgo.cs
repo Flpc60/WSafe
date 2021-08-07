@@ -43,7 +43,7 @@ namespace WSafe.Web.Data
         public bool RequisitoLegal { get; set; }
         public string Eliminacion { get; set; }
         public string Sustitucion { get; set; }
-        public List<ControlIngria> ControlesIngenieria { get; set; }
+        public List<Control> ControlesIngenieria { get; set; }
         public List<ControlAdmon> ControlesAdministrativo { get; set; }
         public string EPP { get; set; }
         public List<SeguimientoRiesgo> Seguiminetos { get; set; }

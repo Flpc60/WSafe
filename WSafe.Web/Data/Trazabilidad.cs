@@ -6,21 +6,20 @@ using System.Threading.Tasks;
 
 namespace WSafe.Web.Data
 {
-    public class ControlIngria
+    public class Trazabilidad
     {
+        [Required(ErrorMessage = "The field {0} is mandatory.")]
         public int ID { get; set; }
         [Required(ErrorMessage = "The field {0} is mandatory.")]
-        public string Descripcion { get; set; }
+        public int TrabajadorID { get; set; }
         [Required(ErrorMessage = "The field {0} is mandatory.")]
+        [Display(Name = "Fecha inicial")]
         public DateTime FechaInicial { get; set; }
         [Required(ErrorMessage = "The field {0} is mandatory.")]
+        [Display(Name = "Fecha final")]
         public DateTime FechaFinal { get; set; }
-        public bool Efectividad { get; set; }
-        [Required(ErrorMessage = "The field {0} is mandatory.")]
-        [DisplayFormat(DataFormatString = "{0:C2}", ApplyFormatInEditMode = false)]
         public decimal Presupuesto { get; set; }
-        public string Observaciones { get; set; }
-        public string Responsable { get; set; }
+
 
     }
 }

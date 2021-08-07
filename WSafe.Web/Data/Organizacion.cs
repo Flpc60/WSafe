@@ -5,6 +5,7 @@ namespace WSafe.Web.Data
 {
     public class Organizacion
     {
+        [Required(ErrorMessage = "El campo {0} es obligatotio")]
         public int ID { get; set; }
         [Required(ErrorMessage = "El campo {0} es obligatotio")]
         [MaxLength(12, ErrorMessage = "La longitud máxima del campo {0}, es {1}")]
@@ -27,6 +28,7 @@ namespace WSafe.Web.Data
         [MaxLength(50, ErrorMessage = "La longitud máxima del campo {0}, es {1}")]
         public string ARL { get; set; }
         [Required(ErrorMessage = "El campo {0} es obligatotio")]
+        [Display(Name = "Nivel de riesgo")]
         public int NivelRiesgo { get; set; }
         [Required(ErrorMessage = "El campo {0} es obligatotio")]
         [MaxLength(12, ErrorMessage = "La longitud máxima del campo {0}, es {1}")]
@@ -67,8 +69,6 @@ namespace WSafe.Web.Data
         [Display(Name = "Turnos Personal Operativo")]
         public string TurnosOperativo { get; set; }
         public ICollection<Sede> Sedes { get; set; }
-        public ICollection<Centro> Centros { get; set; }
         public ICollection<Proceso> Procesos { get; set; }
-
     }
 }
