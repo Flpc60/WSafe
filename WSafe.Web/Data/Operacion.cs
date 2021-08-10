@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace WSafe.Web.Data
 {
-    public class Trazabilidad
+    public class Operacion
     {
         [Required(ErrorMessage = "The field {0} is mandatory.")]
         public int ID { get; set; }
@@ -18,8 +15,11 @@ namespace WSafe.Web.Data
         [Required(ErrorMessage = "The field {0} is mandatory.")]
         [Display(Name = "Fecha final")]
         public DateTime FechaFinal { get; set; }
+        [Required(ErrorMessage = "The field {0} is mandatory.")]
+        public int ControlID { get; set; }
         public decimal Presupuesto { get; set; }
-
-
+        [Required(ErrorMessage = "The field {0} is mandatory.")]
+        public int Efectividad { get; set; }
+        public string Observaciones { get; set; }
     }
 }

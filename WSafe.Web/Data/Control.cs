@@ -11,6 +11,11 @@ namespace WSafe.Web.Data
         [Required(ErrorMessage = "The field {0} is mandatory.")]
         public int ID { get; set; }
         [Required(ErrorMessage = "The field {0} is mandatory.")]
+        public int ActividadID { get; set; }
+        [Required(ErrorMessage = "The field {0} is mandatory.")]
+        public int AmenazaID { get; set; }
+        [Required(ErrorMessage = "The field {0} is mandatory.")]
+        public int MitigadorID { get; set; }
         public string Codigo { get; set; }
         public string Nombre { get; set; }
         public string Finalidad { get; set; }
@@ -21,8 +26,10 @@ namespace WSafe.Web.Data
             : $"https://wsafe.azurewebsites.net{DescripcionUrl.Substring(1)}";
 
         [Required(ErrorMessage = "The field {0} is mandatory.")]
-        public string Categoria { get; set; }
-        public int Efectividad { get; set; }
-        public ICollection<Trazabilidad> Performance { get; set; }
+        public int Categoria { get; set; }
+        public decimal Presupuesto { get; set; }
+        public ICollection<Operacion> Operaciones { get; set; }
+        public ICollection<Traza> Trazabilidad { get; set; }
+
     }
 }
