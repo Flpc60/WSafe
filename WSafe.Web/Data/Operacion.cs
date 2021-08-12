@@ -10,6 +10,7 @@ namespace WSafe.Web.Data
         [Required(ErrorMessage = "The field {0} is mandatory.")]
         public int TrabajadorID { get; set; }
         [Required(ErrorMessage = "The field {0} is mandatory.")]
+        public int TrazaID { get; set; }
         [Display(Name = "Fecha inicial")]
         public DateTime FechaInicial { get; set; }
         [Required(ErrorMessage = "The field {0} is mandatory.")]
@@ -19,7 +20,7 @@ namespace WSafe.Web.Data
         public int ControlID { get; set; }
         public decimal Presupuesto { get; set; }
         [Required(ErrorMessage = "The field {0} is mandatory.")]
-        public int Efectividad { get; set; }
+        public int CategoriaEfectividad { get; set; }
         public string Observaciones { get; set; }
     }
 }

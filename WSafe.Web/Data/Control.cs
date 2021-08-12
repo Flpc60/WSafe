@@ -16,8 +16,11 @@ namespace WSafe.Web.Data
         public int AmenazaID { get; set; }
         [Required(ErrorMessage = "The field {0} is mandatory.")]
         public int MitigadorID { get; set; }
+        [Required(ErrorMessage = "The field {0} is mandatory.")]
         public string Codigo { get; set; }
+        [Required(ErrorMessage = "The field {0} is mandatory.")]
         public string Nombre { get; set; }
+        [Required(ErrorMessage = "The field {0} is mandatory.")]
         public string Finalidad { get; set; }
         [Display(Name = "Descripción Url")]
         public string DescripcionUrl { get; set; }
