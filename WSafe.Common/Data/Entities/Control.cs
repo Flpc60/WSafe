@@ -1,21 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace WSafe.Web.Data
+namespace WSafe.Common.Data.Entities
 {
     public class Control
     {
         [Required(ErrorMessage = "The field {0} is mandatory.")]
         public int ID { get; set; }
-        [Required(ErrorMessage = "The field {0} is mandatory.")]
-        public int ActividadID { get; set; }
-        [Required(ErrorMessage = "The field {0} is mandatory.")]
-        public int AmenazaID { get; set; }
-        [Required(ErrorMessage = "The field {0} is mandatory.")]
-        public int MitigadorID { get; set; }
         [Required(ErrorMessage = "The field {0} is mandatory.")]
         public string Codigo { get; set; }
         [Required(ErrorMessage = "The field {0} is mandatory.")]
@@ -29,10 +20,8 @@ namespace WSafe.Web.Data
             : $"https://wsafe.azurewebsites.net{DescripcionUrl.Substring(1)}";
 
         [Required(ErrorMessage = "The field {0} is mandatory.")]
-        public int Categoria { get; set; }
         public decimal Presupuesto { get; set; }
-        public ICollection<Operacion> Operaciones { get; set; }
-        public ICollection<Traza> Trazabilidad { get; set; }
-
+        public string Aplicacion { get; set; }
+        public ICollection<Traza> Trazas { get; set; }
     }
 }

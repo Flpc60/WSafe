@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace WSafe.Web.Data
+namespace WSafe.Common.Data.Entities
 {
     public class SeguimientoRiesgo
     {
         public int ID { get; set; }
-        public DateTime Fecha{ get; set; }
+        public int RiesgoID { get; set; }
+        public DateTime Fecha { get; set; }
         public string EstadoIntervencion { get; set; }
         public string Observaciobnes { get; set; }
-        public string Responsable { get; set; }
-
+        public int TrabajadorID { get; set; }
     }
 }

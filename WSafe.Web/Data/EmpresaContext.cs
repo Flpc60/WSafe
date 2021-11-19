@@ -11,7 +11,6 @@ namespace WSafe.Web.Data
         public EmpresaContext(DbContextOptions<EmpresaContext> options) : base(options)
         {
         }
-        public DbSet<Manager> Managers { get; set; }
 
     }
 }

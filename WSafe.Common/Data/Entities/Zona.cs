@@ -1,6 +1,6 @@
 ﻿namespace WSafe.Common.Data.Entities
 {
-    public class Tarea
+    class Zona
     {
         public int ID { get; set; }
         public string Nombre { get; set; }

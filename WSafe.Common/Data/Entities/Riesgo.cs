@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace WSafe.Web.Data
+namespace WSafe.Common.Data
 {
     public class Riesgo
     {
         public int ID { get; set; }
-        public int SedeID { get; set; }
-        public int CentroID { get; set; }
-        public int LugarID { get; set; }
         public int CargoID { get; set; }
         public int ProcesoID { get; set; }
         public int ActividadID { get; set; }
