@@ -8,11 +8,11 @@ namespace WSafe.Web.Data
 {
     public class SeedDb
     {
-        private readonly DataContext _context;
+        private readonly EmpresaContext _context;
         private readonly IUserHelper _userHelper;
 
         public SeedDb(
-            DataContext context,
+            EmpresaContext context,
             IUserHelper userHelper)
         {
             _context = context;

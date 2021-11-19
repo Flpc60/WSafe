@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace WSafe.Web.Data
 {
-    public class DataContext : DbContext
+    public class EmpresaContext : DbContext
     {
-        public DataContext(DbContextOptions<DataContext> options) : base(options)
+        public EmpresaContext(DbContextOptions<EmpresaContext> options) : base(options)
         {
         }
         public DbSet<Manager> Managers { get; set; }
